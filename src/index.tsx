@@ -69,5 +69,6 @@ if (process.env.NODE_ENV === 'development' && window.self === window.top) {
         render(componentLocationSetting.component, root);
       }
     });
+    ((sdk as unknown) as FieldExtensionSDK).window.startAutoResizer();
   });
 }
