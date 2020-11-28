@@ -1,6 +1,6 @@
 {
   "name": "contentful-repeater-field",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@contentful/field-editor-single-line": "^0.11.3",
