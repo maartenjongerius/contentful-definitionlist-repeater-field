@@ -90,7 +90,8 @@ const Field = (props: FieldProps) => {
     // If you only want to extend Contentful's default editing experience
     // reuse Contentful's editor components
     // -> https://www.contentful.com/developers/docs/extensibility/field-editors/
-    const { sdk: { field } } = props
+    const { sdk: { field, window } } = props
+    window.startAutoResizer();
     const [value, setValue] = useState(field.getValue())
     const [formValues, setFormValues] = useState({term: undefined, details: undefined})
 
